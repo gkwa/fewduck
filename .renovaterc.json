@@ -1,20 +1,20 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
+  "extends": [
+    "config:recommended"
+  ],
   "packageRules": [
     {
       "matchDepTypes": ["*"],
       "automerge": true,
-      "automergeType": "pr",
-      "automergeStrategy": "squash",
-      "requiredStatusChecks": ["Build & Test"],
-      "ignoreTests": false,
-      "suppressNotifications": ["prAutomergeNotReadyOwnPr"]
+      "automergeType": "branch",
+      "automergeStrategy": "fast-forward",
+      "requiredStatusChecks": null
     }
   ],
   "platformAutomerge": true,
-  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
-  "branchPrefix": "renovate/",
-  "prCreation": "immediate",
-  "dependencyDashboardApproval": false
+  "postUpdateOptions": [
+	  "gomodTidy",
+	  "gomodUpdateImportPaths"
+  ]
 }

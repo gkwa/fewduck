@@ -10,8 +10,8 @@
       "requiredStatusChecks": ["Build & Test"]
     }
   ],
-  "platformAutomerge": true,
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
   "branchPrefix": "renovate/",
-  "prCreation": "immediate"
+  "prCreation": "immediate",
+  "platformAutomerge": true
 }

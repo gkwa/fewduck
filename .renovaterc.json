@@ -1,14 +1,12 @@
 {
  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
  "extends": [
-   "config:recommended"
+   "config:recommended" 
  ],
  "allowedPostUpgradeCommands": [
-   "^go\\smod\\stidy$",
-   "^go\\smod\\sdownload$",
-   "^go\\srun"
+   "go mod tidy",
+   "go mod download"
  ],
- "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
  "packageRules": [
    {
      "matchPackagePatterns": ["^gopkg\\.in/yaml\\."],
@@ -24,9 +22,10 @@
      "matchDepTypes": ["*"],
      "automerge": true,
      "automergeType": "branch",
-     "automergeStrategy": "fast-forward",
+     "automergeStrategy": "fast-forward", 
      "requiredStatusChecks": null
    }
  ],
- "platformAutomerge": true
+ "platformAutomerge": true,
+ "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
 }

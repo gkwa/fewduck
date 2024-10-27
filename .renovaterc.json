@@ -9,7 +9,7 @@
       "automergeStrategy": "fast-forward",
       "requiredStatusChecks": null,
       "postUpgradeTasks": {
-        "commands": ["go mod tidy", "gofmt -w .", "goimports -w ."]
+        "commands": ["go mod tidy"]
       }
     }
   ],

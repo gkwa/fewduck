@@ -1,24 +1,18 @@
 {
- "$schema": "https://docs.renovatebot.com/renovate-schema.json",
- "extends": [
-   "config:recommended" 
- ],
- "packageRules": [
-   {
-     "matchDepTypes": ["*"],
-     "automerge": true,
-     "automergeType": "branch",
-     "automergeStrategy": "fast-forward",
-     "requiredStatusChecks": null,
-     "postUpgradeTasks": {
-       "commands": [
-         "go mod tidy",
-         "gofmt -w .",
-         "goimports -w ."
-       ]
-     }
-   }
- ],
- "platformAutomerge": true,
- "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "matchDepTypes": ["*"],
+      "automerge": true,
+      "automergeType": "branch",
+      "automergeStrategy": "fast-forward",
+      "requiredStatusChecks": null,
+      "postUpgradeTasks": {
+        "commands": ["go mod tidy", "gofmt -w .", "goimports -w ."]
+      }
+    }
+  ],
+  "platformAutomerge": true,
+  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
 }

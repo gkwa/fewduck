@@ -3,13 +3,14 @@
  "extends": [
    "config:recommended"
  ],
+ "allowPostUpgradeCommands": true,
  "allowedPostUpgradeCommands": [
-   "go mod tidy"
+   "^go\\smod\\stidy$"
  ],
  "packageRules": [
    {
      "matchDepTypes": ["*"],
-     "automerge": true, 
+     "automerge": true,
      "automergeType": "branch",
      "automergeStrategy": "fast-forward",
      "requiredStatusChecks": null,

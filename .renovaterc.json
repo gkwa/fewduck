@@ -7,11 +7,14 @@
       "automerge": true,
       "automergeType": "pr",
       "automergeStrategy": "squash",
-      "requiredStatusChecks": ["Build & Test"]
+      "requiredStatusChecks": ["Build & Test"],
+      "ignoreTests": false
     }
   ],
   "platformAutomerge": true,
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
   "branchPrefix": "renovate/",
-  "prCreation": "immediate"
+  "prCreation": "immediate",
+  "dependencyDashboardApproval": false,
+  "requiresStatusChecks": true
 }

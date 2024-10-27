@@ -16,6 +16,5 @@
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
   "branchPrefix": "renovate/",
   "prCreation": "immediate",
-  "dependencyDashboardApproval": false,
-  "onlyNonBlocking": true
+  "dependencyDashboardApproval": false
 }

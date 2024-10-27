@@ -13,6 +13,5 @@
   "platformAutomerge": true,
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
   "branchPrefix": "renovate/",
-  "createPr": true,
   "prCreation": "immediate"
 }

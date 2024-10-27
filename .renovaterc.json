@@ -9,7 +9,8 @@
       "automergeStrategy": "fast-forward",
       "requiredStatusChecks": null,
       "postUpgradeTasks": {
-        "commands": ["go mod tidy"]
+        "commands": ["go mod tidy"],
+        "executionMode": "branch"
       }
     }
   ],

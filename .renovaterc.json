@@ -5,11 +5,14 @@
     {
       "matchDepTypes": ["*"],
       "automerge": true,
-      "automergeType": "branch",
-      "automergeStrategy": "fast-forward",
-      "requiredStatusChecks": null
+      "automergeType": "pr",
+      "automergeStrategy": "squash",
+      "requiredStatusChecks": ["Build & Test"]
     }
   ],
   "platformAutomerge": true,
-  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
+  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
+  "branchPrefix": "renovate/",
+  "createPr": true,
+  "prCreation": "immediate"
 }

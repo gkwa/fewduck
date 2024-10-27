@@ -4,23 +4,29 @@
    "config:recommended"
  ],
  "allowedPostUpgradeCommands": [
-   "^go\\smod\\stidy$"
+   "^go\\smod\\stidy$",
+   "^go\\smod\\sdownload$",
+   "^go\\srun"
  ],
+ "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
  "packageRules": [
+   {
+     "matchPackagePatterns": ["^gopkg\\.in/yaml\\."],
+     "postUpgradeTasks": {
+       "commands": [
+         "go mod tidy",
+         "go mod download"
+       ],
+       "fileFilters": ["go.mod", "go.sum", "**/*.go"]
+     }
+   },
    {
      "matchDepTypes": ["*"],
      "automerge": true,
      "automergeType": "branch",
      "automergeStrategy": "fast-forward",
-     "requiredStatusChecks": null,
-     "postUpgradeTasks": {
-       "commands": [
-         "go mod tidy"
-       ],
-       "executionMode": "branch"
-     }
+     "requiredStatusChecks": null
    }
  ],
- "platformAutomerge": true,
- "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
+ "platformAutomerge": true
 }

@@ -8,12 +8,14 @@
       "automergeType": "pr",
       "automergeStrategy": "squash",
       "requiredStatusChecks": ["Build & Test"],
-      "ignoreTests": false
+      "ignoreTests": false,
+      "suppressNotifications": ["prAutomergeNotReadyOwnPr"]
     }
   ],
   "platformAutomerge": true,
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
   "branchPrefix": "renovate/",
   "prCreation": "immediate",
-  "dependencyDashboardApproval": false
+  "dependencyDashboardApproval": false,
+  "onlyNonBlocking": true
 }

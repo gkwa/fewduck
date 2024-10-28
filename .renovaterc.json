@@ -6,8 +6,7 @@
       "matchDepTypes": ["*"],
       "automerge": true,
       "automergeType": "pr",
-      "automergeStrategy": "squash",
-      "requiredStatusChecks": ["Build & Test"]
+      "automergeStrategy": "squash"
     }
   ],
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],

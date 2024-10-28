@@ -5,7 +5,7 @@
     {
       "matchDepTypes": ["*"],
       "automerge": true,
-      "automergeType": "branch",
+      "automergeType": "pr",
       "automergeStrategy": "squash",
       "requiredStatusChecks": ["Build & Test"]
     }

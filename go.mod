@@ -3,7 +3,7 @@ module github.com/gkwa/fewduck
 go 1.23.2
 
 require (
-	github.com/fatih/color v1.18.0
+	github.com/fatih/color v1.15.0
 	github.com/go-git/go-git/v5 v5.12.0
 	github.com/go-logr/logr v1.4.1
 	github.com/go-logr/zerologr v1.2.3

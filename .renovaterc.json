@@ -5,10 +5,8 @@
     {
       "automerge": true,
       "automergeStrategy": "merge-commit",
-      "matchDepTypes": [
-        "*"
-      ],
-       "recreateWhen": "always"
+      "matchDepTypes": ["*"],
+      "recreateWhen": "always"
     }
   ],
   "platformAutomerge": true,

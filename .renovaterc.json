@@ -5,7 +5,6 @@
     {
       "automerge": true,
       "automergeStrategy": "merge-commit",
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "replacement"],
       "matchDepTypes": ["*"],
       "recreateWhen": "always"
     }

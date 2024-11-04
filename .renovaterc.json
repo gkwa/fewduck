@@ -5,8 +5,10 @@
     {
       "automerge": true,
       "automergeStrategy": "merge-commit",
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "replacement"],
-      "recreateWhen": "always"
+      "matchDepTypes": [
+        "*"
+      ],
+       "recreateWhen": "always"
     }
   ],
   "platformAutomerge": true,

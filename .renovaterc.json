@@ -5,7 +5,7 @@
     {
       "automerge": true,
       "automergeStrategy": "merge-commit",
-      "matchDepTypes": ["*"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "bump", "lockFileMaintenance", "replacement", "rollback"],
       "recreateWhen": "always"
     }
   ],

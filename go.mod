@@ -1,6 +1,6 @@
 module github.com/gkwa/fewduck
 
-go 1.25.7
+go 1.26.0
 
 toolchain go1.26.4
 
@@ -15,7 +15,7 @@ require (
 	github.com/spf13/cobra v1.10.2
 	github.com/spf13/viper v1.21.0
 	gopkg.in/yaml.v3 v3.0.1
-	sigs.k8s.io/controller-runtime v0.23.3
+	sigs.k8s.io/controller-runtime v0.24.1
 )
 
 require (
